@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas — TerraSense</title>
+  <link rel="stylesheet" href="assets/css/terrasense.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="site-header" aria-label="Principal">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="" width="36" height="36">
+        TerraSense
+      </a>
+      <div class="nav-desktop">
+        <a href="index.html">Início</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a class="is-active" href="personas.html" aria-current="page">Personas</a>
+        <a href="contato.html">Contatos</a>
+      </div>
+      <div class="header-actions">
+        <button type="button" class="btn-menu js-nav-toggle" aria-expanded="false"
+          aria-controls="mobile-menu">Menu</button>
+        <a href="https://gru.ifsp.edu.br/" class="btn-portal signature-gradient" target="_blank"
+          rel="noopener noreferrer">Portal IFSP GRU</a>
+      </div>
+      <div id="mobile-menu" class="hidden">
+        <a href="index.html">Início</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a class="is-active" href="personas.html">Personas</a>
+        <a href="contato.html">Contatos</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main" class="main--personas">
+    <div class="container">
+      <header class="personas-intro">
+        <h1>
+          Equipe <span class="text-primary">TerraSense</span>
+        </h1>
+        <p>
+          Conheça os talentos por trás da TerraSense. Unindo engenharia da computação, agilidade e inovação para criar o
+          futuro das soluções tecnológicas no IFSP.
+        </p>
+      </header>
+
+      <div class="grid-personas">
+        <article id="thiago-tome-da-silva" class="persona-card">
+          <div class="persona-card__media">
+            <img alt="Thiago Tomé da Silva" src="assets/equipe/thiago.jpg" width="400" height="500">
+            <div class="persona-card__badge academic-gradient">Scrum Master</div>
+          </div>
+          <div class="persona-card__body">
+            <div>
+              <h2>Thiago Tomé da Silva</h2>
+              <p class="persona-card__tag">Gerenciamento &amp; Dados</p>
+            </div>
+            <div class="persona-block">
+              <span class="persona-block__label">Perfil</span>
+              <p>Estudante de Engenharia da Computação focado em gerenciamento de projetos e análise de dados. Atua com
+                mentalidade ágil, arquiteturas modernas e conteinerização.</p>
+            </div>
+            <div class="persona-block persona-block--muted">
+              <span class="persona-block__label">Competências</span>
+              <p>PHP/Laravel, Vue.js, Docker, Gestão de Entregas, Liderança Técnica.</p>
+            </div>
+            <div class="persona-highlight">
+              <span class="persona-block__label">Responsabilidades</span>
+              <p>Gestão de Entregas, Governança de Design System, Estruturação de Dados (MySQL).</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="juan-souza" class="persona-card">
+          <div class="persona-card__media">
+            <img alt="Juan Souza" src="assets/equipe/juan.jpg" width="400" height="500">
+            <div class="persona-card__badge academic-gradient">Full Stack Dev</div>
+          </div>
+          <div class="persona-card__body">
+            <div>
+              <h2>Juan Souza</h2>
+              <p class="persona-card__tag">Desenvolvimento Web</p>
+            </div>
+            <div class="persona-block">
+              <span class="persona-block__label">Perfil</span>
+              <p>Estudante de Engenharia da Computação com foco em sistemas web. Experiência em backend e frontend,
+                containerização e integração entre camadas.</p>
+            </div>
+            <div class="persona-block persona-block--muted">
+              <span class="persona-block__label">Competências</span>
+              <p>PHP (Laravel), Vue.js, Inertia.js, CSS, Docker, MySQL.</p>
+            </div>
+            <div class="persona-highlight">
+              <span class="persona-block__label">Responsabilidades</span>
+              <p>Desenvolvimento da lógica do sistema, implementação de interfaces dinâmicas, organização da arquitetura
+                MVC.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="gabriel-nascimento-barbosa" class="persona-card">
+          <div class="persona-card__media">
+            <img alt="Gabriel Nascimento Barbosa" src="assets/equipe/gabriel.jpg" width="400" height="500">
+            <div class="persona-card__badge academic-gradient">Full Stack Dev</div>
+          </div>
+          <div class="persona-card__body">
+            <div>
+              <h2>Gabriel N. Barbosa</h2>
+              <p class="persona-card__tag">Sistemas &amp; BI</p>
+            </div>
+            <div class="persona-block">
+              <span class="persona-block__label">Perfil</span>
+              <p>Estudante de Engenharia da Computação com interesse em sistemas web e análise de dados. Experiência com
+                múltiplas linguagens (Java, Python, C) e BI.</p>
+            </div>
+            <div class="persona-block persona-block--muted">
+              <span class="persona-block__label">Competências</span>
+              <p>PHP (Laravel), Java (Spring Boot), PowerBI, APIs RESTful, Git/GitHub, Docker.</p>
+            </div>
+            <div class="persona-highlight">
+              <span class="persona-block__label">Responsabilidades</span>
+              <p>Lógica de funcionalidades, gestão de banco de dados, análise de dados e suporte técnico.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="allan-de-castro-ferreira-da-rocha-assuncao" class="persona-card">
+          <div class="persona-card__media">
+            <img alt="Allan de Castro Ferreira da Rocha Assunção" src="assets/equipe/allan.jpg" width="400"
+              height="500">
+            <div class="persona-card__badge academic-gradient">Backend Dev</div>
+          </div>
+          <div class="persona-card__body">
+            <div>
+              <h2>Allan de Castro</h2>
+              <p class="persona-card__tag">Lógica de Backend</p>
+            </div>
+            <div class="persona-block">
+              <span class="persona-block__label">Perfil</span>
+              <p>Estudante de Engenharia da Computação focado em backend e lógica de sistemas. Contribui na construção
+                da lógica central e integridade do sistema.</p>
+            </div>
+            <div class="persona-block persona-block--muted">
+              <span class="persona-block__label">Competências</span>
+              <p>PHP (Laravel), Java (Spring Boot), MySQL, APIs RESTful, Postman.</p>
+            </div>
+            <div class="persona-highlight">
+              <span class="persona-block__label">Responsabilidades</span>
+              <p>Desenvolvimento de lógica backend, integração com banco de dados, manutenção da arquitetura MVC.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <section class="philosophy">
+        <div>
+          <h3>Nossa <br>Filosofia</h3>
+          <p class="philosophy__lead">Não somos apenas prestadores de serviço; somos uma extensão do conhecimento
+            aplicado do IFSP.</p>
+        </div>
+        <div class="philosophy-grid">
+          <div class="philo-card philo-card--a">
+            <span class="material-symbols-outlined" aria-hidden="true">diversity_3</span>
+            <h4>Colaboração Radical</h4>
+            <p>Romper os silos entre disciplinas para criar soluções híbridas de alto impacto.</p>
+          </div>
+          <div class="philo-card philo-card--b">
+            <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            <h4>Rigor Científico</h4>
+            <p>Toda decisão técnica é embasada em pesquisa e validação empírica rigorosa.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">TerraSense</div>
+      <div class="site-footer__links">
+        <a href="quem-somos.html#extensao-consultoria">Consultoria</a>
+        <a href="quem-somos.html#extensao-capacitacao">Capacitação</a>
+        <a href="quem-somos.html#extensao-projetos-engenharia">Projetos</a>
+        <a href="contato.html">Privacidade</a>
+      </div>
+      <div class="site-footer__copy">© 2026 IFSP Campus Guarulhos. TerraSense.</div>
+    </div>
+  </footer>
+  <script src="js/stitch-nav.js"></script>
+</body>
+
+</html>
