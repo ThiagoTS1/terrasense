@@ -7,13 +7,14 @@
 declare(strict_types=1);
 
 return [
-    'db_host' => 'localhost',
-    'db_name' => 'terrasense',
-    'db_user' => 'seu_usuario_mysql',
-    'db_pass' => 'sua_senha_mysql',
-    'db_charset' => 'utf8mb4',
+    // Configurações de banco desativadas temporariamente
+    // 'db_host' => 'localhost',
+    // 'db_name' => 'terrasense',
+    // 'db_user' => 'seu_usuario_mysql',
+    // 'db_pass' => 'sua_senha_mysql',
+    // 'db_charset' => 'utf8mb4',
     
-    'scrum_email' => 'scrum@terrasense.local',
-   
-    'mail_from' => 'noreply@seudominio.com.br',
+    // Configurações de e-mail desativadas temporariamente
+    // 'scrum_email' => 'scrum@terrasense.local',
+    // 'mail_from' => 'noreply@seudominio.com.br',
 ];
