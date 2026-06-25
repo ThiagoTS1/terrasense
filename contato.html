@@ -60,6 +60,7 @@
           tente mais tarde.</div>
         <div id="msg-config" class="alert alert--err hidden" role="alert">Configure <code>php/config.php</code> (copie
           de <code>config.example.php</code>).</div>
+         <div id="msg-desativado" class="alert alert--err hidden" role="alert">O envio de emails esta temporariamente desativado. Tente novamente mais tarde.</div>
 
         <form class="form-stack" action="php/enviar-contato.php" method="post">
           <div class="form-row form-row--2">
@@ -162,6 +163,7 @@
       if (p.get("enviado") === "1") show("msg-ok");
       if (p.get("erro") === "1") show("msg-erro");
       if (p.get("erro") === "config") show("msg-config");
+      if (p.get("erro") === "desativado") show("msg-desativado);
     })();
   </script>
 </body>
