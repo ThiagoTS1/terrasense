@@ -1744,3 +1744,328 @@ img {
 .scroll-mt {
   scroll-margin-top: 6rem;
 }
+
+/* ========== SWOT ========== */
+.grid-swot {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-swot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-swot {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface-container-lowest);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card-swot--strength {
+  border-left: 4px solid var(--primary);
+}
+
+.card-swot--opportunity {
+  border-left: 4px solid var(--secondary);
+}
+
+.card-swot__icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-swot--strength .card-swot__icon {
+  background: var(--primary-fixed);
+  color: var(--primary);
+}
+
+.card-swot--opportunity .card-swot__icon {
+  background: #bcf1ab;
+  color: var(--secondary);
+}
+
+.card-swot h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.card-swot ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-swot li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--on-surface-variant);
+  line-height: 1.65;
+}
+
+.card-swot li .material-symbols-outlined {
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.card-swot--strength li .material-symbols-outlined {
+  color: var(--primary);
+}
+
+.card-swot--opportunity li .material-symbols-outlined {
+  color: var(--secondary);
+}
+
+.grid-swot-preview {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-swot-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-swot-preview {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface-container-lowest);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card-swot-preview--strength {
+  border-left: 4px solid var(--primary);
+}
+
+.card-swot-preview--opportunity {
+  border-left: 4px solid var(--secondary);
+}
+
+.card-swot-preview h3 {
+  font-size: 1.125rem;
+  margin: 0 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-swot-preview h3 .material-symbols-outlined {
+  font-size: 1.25rem;
+}
+
+.card-swot-preview--strength h3 .material-symbols-outlined {
+  color: var(--primary);
+}
+
+.card-swot-preview--opportunity h3 .material-symbols-outlined {
+  color: var(--secondary);
+}
+
+.card-swot-preview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+.card-swot-preview li {
+  margin-bottom: 0.375rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.card-swot-preview li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.card-swot-preview--strength li::before {
+  color: var(--primary);
+}
+
+.card-swot-preview--opportunity li::before {
+  color: var(--secondary);
+}
+
+.swot-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.swot-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.swot-actions__primary {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+.swot-actions__primary:hover {
+  background: var(--emerald-800);
+}
+
+.swot-actions__secondary {
+  background: var(--surface-container-low);
+  color: var(--on-surface);
+  border: 1px solid var(--outline-variant);
+}
+
+.swot-actions__secondary:hover {
+  background: var(--surface-container);
+}
+
+.swot-intro {
+  margin-bottom: 3.5rem;
+}
+
+.swot-intro__tag {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background: var(--primary-fixed);
+  color: var(--on-primary-fixed-variant);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.swot-section {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--outline-variant);
+}
+
+.swot-section .section-block-head {
+  margin-bottom: 2.5rem;
+}
+
+.grid-swot-team {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-swot-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.swot-member {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface-container-lowest);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(190, 202, 182, 0.35);
+}
+
+.swot-member__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--surface-container-high);
+}
+
+.swot-member__head img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.swot-member__head h3 {
+  font-size: 1rem;
+  margin: 0 0 0.125rem;
+}
+
+.swot-member__role {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.swot-member__grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 480px) {
+  .swot-member__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.swot-member__col h4 {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.625rem;
+  font-weight: 700;
+}
+
+.swot-member__col--strength h4 {
+  color: var(--primary);
+}
+
+.swot-member__col--opportunity h4 {
+  color: var(--secondary);
+}
+
+.swot-member__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--on-surface-variant);
+  line-height: 1.55;
+}
+
+.swot-member__col li {
+  margin-bottom: 0.375rem;
+  padding-left: 0.875rem;
+  position: relative;
+}
+
+.swot-member__col li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.swot-member__col--strength li::before {
+  color: var(--primary);
+}
+
+.swot-member__col--opportunity li::before {
+  color: var(--secondary);
+}
